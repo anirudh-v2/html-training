@@ -1,0 +1,40 @@
+.column {
+    float: left;
+    width: 181px;
+    height: 300px;
+    padding: 0px 10px 0px 10px;
+}
+
+#article-border-right {
+    border-right: 1px solid #aba2a2;
+
+}
+
+figure {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+img {
+    width: 180px;
+    height: 170px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+figcaption {
+    font-size: small;
+    color: #636060;
+}
+h4{
+    font-family: 'Times New Roman';
+    margin-block-start: 0.33em;
+}
