@@ -27,23 +27,67 @@
         </ul>
     </header>
     <nav class="navbar">
-            <h1 class="nav-brand"><a>COMPANY NAME</a></h1>
+        <h1 class="nav-brand"><a>COMPANY NAME</a></h1>
         <ul>
-
-            <li class="nav-item"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></li>
-            <li class="nav-item"><i class="fa fa-file-text" aria-hidden="true"></i><span>Pages</span></li>
-            <li class="nav-item"><i class="fa fa-cog" aria-hidden="true"></i><span>Services</span></li>
-            <li class="nav-item"><i class="fa fa-calendar" aria-hidden="true"></i><span>Events</span></li>
-            <li class="nav-item"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <span>Blog</span></li>
-            <li class="nav-item"><i class="fa fa-home" aria-hidden="true"></i><span>FAQs</span></li>
-            <li class="nav-item"><i class="fa fa-phone" aria-hidden="true"></i><span>Contact</span></li>
-
+            <li class="nav-item"><a><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
+            <li class="nav-item dropdown">
+                <a><i class="fa fa-file-text" aria-hidden="true"></i><span>Pages</span></a>
+                <div class="dropdown-content">
+                    <a>About Us</a>
+                    <a>Volunteer Details</a>
+                    <a>Our Gallery</a>
+                    <a>Error 404</a>
+                    <a>Comming Soon</a>
+                </div>
+            </li>
+            <li class="nav-item"><a><i class="fa fa-cog" aria-hidden="true"></i><span>Services</span></a></li>
+            <li class="nav-item"><a><i class="fa fa-calendar" aria-hidden="true"></i><span>Events</span></a></li>
+            <li class="nav-item"><a><i class="fa fa-newspaper-o" aria-hidden="true"></i> <span>Blog</span></a></li>
+            <li class="nav-item"><a><i class="fa fa-home" aria-hidden="true"></i><span>FAQs</span></a></li>
+            <li class="nav-item"><a><i class="fa fa-phone" aria-hidden="true"></i><span>Contact</span></a></li>
         </ul>
         <button>DONATE NOW</button>
     </nav>
-    <section class="carousel"> 
+    <section class="slider-container">
+        <div class="slider">
+            <div class="slider-image">
+                <img src="images/slider.jpg" alt="slide-image" width="100%">
+            </div>
+            <div class="slider-content">
+                <fieldset>
+                    <legend>Save The Life</legend>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+                    <div class="bottom-legend">
+                        READ MORE
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="message-us-container">
+            <div class="form-container">
+                <form action="#" class="notify-form" >
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Full Name" name="name">
+                    <label for="email">Username or Email</label>
+                    <input type="text" placeholder="info@gmail.com" name="email">
+                    <label>
+                        <input type="checkbox" >Remember Me
+                    </label>
+                    <input type="button" value="SUBMIT">
+                </form>
+            </div>
+            <div class="contact-message">
+                <h2>LEAVE US A MESSAGE</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+        </div>
         
-    </section>  
+    </section>
+    
 </body>
 
 </html>
