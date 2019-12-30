@@ -2,8 +2,11 @@
      font-family: Arial, Helvetica, sans-serif;
      
  }
+ h1,
  h2,
- h4{
+ h3,
+ h4,
+ h5{
      margin: 0;
  }
  body{
@@ -232,7 +235,7 @@
 }
 .about-us-section{
     background-color: #f5f5f5;
-    padding: 50px;
+    /* padding: 50px; */
 }
 .section-heading{
     text-align: center;
@@ -317,4 +320,105 @@
 }
 .gallery-container .column .image{
     height: 100%;
+}
+.our-volunteer-section{
+    background-color: #f5f5f5;
+}
+.our-volunteer-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+.volunteer-card-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;    
+    width: 250px;
+    height: 270px;
+}
+.volunteer-card{
+    position:relative;
+    bottom: 100px;
+}
+.volunteer-card hr{
+    width: 200px;
+}
+.volunteer-social-media-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.volunteer-info{
+    text-align: center;
+    margin:20px
+    /* position: relative;
+    bottom: 60px; */
+}
+.volunteer-social-media-list{
+    padding: 25px;
+}
+.card-image{
+    text-align: center;
+    /* position: relative;
+    bottom: 100px; */
+}
+.footer-section{
+    background-color: #2f2f2f;
+}
+.newsletter-section{
+    background-color:#cc3d23;
+    display: flex;
+    justify-content: space-evenly;
+}
+.newsletter-section h1{
+    color: white;
+    font-size: 35px;
+}
+.newsletter-section input[type="text"]
+{
+    width: 400px;
+    height: 30px;
+}
+.newsletter-section input[type="button"]{
+    background-color: #cc3d23;
+    border: 1px solid white;
+    padding: 10px;
+}
+.copyright-section{
+    background-color: black;
+    color: white;
+    text-align: center
+}
+.footer-section{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    padding: 0px 220px;}
+.footer-section ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-right: 10px;
+    
+}
+.about-us-link li,.discover-link li,.quick-link  li{
+    border-bottom: 1px solid white;
+    line-height: 1.6;
+    padding: 5px 0px;   
+}
+.tags li{
+    border:1px solid white; 
+}
+.heading-underline{
+    color: #f54121;
+}
+.heading-underline i{
+    border-top: 1px solid #f54121 ;
+    border-bottom: 1px solid #f54121;
+    border-width: 2px;
+    padding: 8px;
+    width: 27px;
+}
+.section-description {
+text-align: center;
+
 }
