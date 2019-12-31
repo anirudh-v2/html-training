@@ -56,6 +56,9 @@
 
 .nav-brand{
     color: #f54121;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     
 }
 .navbar{
@@ -113,6 +116,13 @@
     display: block;
 
 }
+.about-us-section,
+.our-causes-section,
+.video-section,
+.our-gallery-section,
+.our-volunteer-section{
+padding: 100px 0px;
+}
 
 .slider{
     height: 750px;
@@ -128,6 +138,7 @@
 .slider fieldset{
     text-align: center;
     width: 570px;
+    height: 150px;
 }
 .slider-content{
     color: #fff;
@@ -140,6 +151,8 @@
     font-size: 45px;
     padding-left: 30px;
     padding-right: 30px;
+    border-bottom:2px solid #f54121;
+
 }
 .bottom-legend{
     position: absolute;
@@ -239,18 +252,21 @@
 }
 .section-heading{
     text-align: center;
+    
 }
 .section-heading p{
     color: grey;
     font-size: 15px;
+    width: 500px;
 }
 .about-us-container{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 .about-us-item{
     width: 355px;
-    margin-bottom: 50px;   
+    /* margin-bottom: 50px;    */
 }
 .about-us-item p{
     color: grey;
@@ -261,13 +277,25 @@
 .about-us-image{
     margin: 0px 50px;
 }
+.about-us-item:last-child{
+     margin-top: 50px;    
+
+}
 .our-causes-container{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .donation-card{
-    width: 365px;
+    width: 350px;
+}
+.donation-card:nth-last-child(2){
+    margin: 0px 50px;
+}
+.donation-card img{
+    width: 350px;
+
 }
 .card-content{
     padding: 20px 20px;
@@ -283,6 +311,12 @@
 .card-price{
     display: flex;
     justify-content: space-between;
+}
+.card-price h5{
+    margin-top: 5px;
+    color: #f54121;
+    font-weight: normal;
+    font-size: 15px;
 }
 .goal-price{
     text-align: right;
@@ -316,6 +350,7 @@
     display: flex;
     flex-direction: row;
     height: 490px;
+    margin-top: 50px;
 
 }
 .gallery-container .column .image{
@@ -327,7 +362,7 @@
 .our-volunteer-container{
     display: flex;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 150px
 }
 .volunteer-card-container{
     margin-left: 10px;
@@ -351,16 +386,27 @@
 .volunteer-info{
     text-align: center;
     margin:20px
+
     /* position: relative;
     bottom: 60px; */
 }
+.volunteer-info h5:last-child{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: grey;
+}
 .volunteer-social-media-list{
     padding: 25px;
+    color: grey;
 }
 .card-image{
     text-align: center;
     /* position: relative;
     bottom: 100px; */
+}
+.our-gallery-section{
+    padding-bottom: 0px;
 }
 .footer-section{
     background-color: #2f2f2f;
@@ -368,11 +414,13 @@
 .newsletter-section{
     background-color:#cc3d23;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding:35px;
 }
 .newsletter-section h1{
     color: white;
     font-size: 35px;
+    margin-right: 60px;
 }
 .newsletter-section input[type="text"]
 {
@@ -383,17 +431,21 @@
     background-color: #cc3d23;
     border: 1px solid white;
     padding: 10px;
+    color: white;
 }
 .copyright-section{
     background-color: black;
     color: white;
-    text-align: center
+    text-align: center;
+    padding: 20px;
 }
 .footer-section{
     display: flex;
     color: white;
     justify-content: space-evenly;
-    padding: 0px 220px;}
+    padding: 100px 350px;;
+
+}
 .footer-section ul{
     list-style-type: none;
     padding: 0px;
@@ -401,12 +453,15 @@
     
 }
 .about-us-link li,.discover-link li,.quick-link  li{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #404142;
     line-height: 1.6;
     padding: 5px 0px;   
 }
 .tags li{
-    border:1px solid white; 
+    border: 1px solid white;
+    display: inline-block;
+    margin:5px;
+    padding: 10px 14px;;
 }
 .heading-underline{
     color: #f54121;
@@ -420,5 +475,39 @@
 }
 .section-description {
 text-align: center;
+display: flex;
+justify-content: center;
 
+}
+.heading-underline{
+    color: #f54121;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.heading-underline i{
+    border-top: 2px solid #f54121;
+    border-bottom: 2px solid #f54121;
+    padding: 8px;
+    width: 30px;
+}
+.heading-underline hr{
+
+    display: inline-block;
+    width: 50px;
+    background-color: #f54121;
+    border: 0px solid;
+    margin: 16px 0px;
+    height: 2px;
+
+}
+.sub-heading{
+    border-bottom : 2px solid #f54121;
+    width: 55px;
+}
+.gallery-container .column img{
+display: block;
+}
+.about-us-link,.discover-link,.quick-link{
+    width: 250px;
 }
