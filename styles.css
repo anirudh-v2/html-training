@@ -12,7 +12,6 @@ h5 {
 /*  */
 body {
   margin: 0px;
-  width: fit-content;
 }
 .nav-header {
   display: flex;
@@ -20,6 +19,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   padding: 0px 100px 0px 100px;
+  width: 100%;
 }
 .contact-list {
   margin: 0px;
@@ -31,13 +31,16 @@ body {
 .header-item {
   float: left;
   color: white;
-  padding: 12px 12px;
+  padding: 12px 16px;
 }
 
 .header-item:hover {
   background-color: #f54121;
 }
-
+.header-item:nth-child(2),
+.header-item:nth-last-child(2):hover {
+  background-color: none;
+}
 
 .social-media-list {
   list-style-type: none;
@@ -64,6 +67,7 @@ body {
   flex-direction: row;
   padding: 25px;
   padding-bottom: 15px;
+  width: 100%;
   /* padding-left: 380px; */
   /* padding-right: 300px; */
 }
@@ -135,7 +139,7 @@ body {
 .slider fieldset {
   text-align: center;
   width: 650px;
-  height: 150px;
+  height: 195px;
   border-bottom: none;
 }
 
@@ -183,8 +187,8 @@ body {
 } */
 .form-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 265px;
-  height: 320px;
+  width: 330px;
+  height: 350px;
   padding: 10px 45px 20px;
   background-color: white;
 }
@@ -250,10 +254,14 @@ body {
 }
 .company-feature {
   display: flex;
+  justify-content: center;
+}
+.feature-container {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0px 300px;
+  width: 70%;
 }
 .company-feature div.feature:hover {
   border-color: #f54121;
@@ -263,7 +271,7 @@ body {
   color: white;
 }
 .feature {
-  width: 310px;
+  width: 345px;
   border: 1px solid #e4e4e4;
   margin: 0px 30px 30px 0px;
   display: flex;
@@ -381,10 +389,11 @@ progress[value]::-webkit-progress-value {
 .play-btn {
   position: relative;
   bottom: 70%;
-  left: 45%;
+  left: 40%;
+  width: 20%;
 }
 .video {
-  width: 555px;
+  width: 31%;
   height: 305px;
   margin-right: 20px;
 }
@@ -394,7 +403,7 @@ progress[value]::-webkit-progress-value {
 
 .video-info {
   color: white;
-  width: 515px;
+  width: 30%;
   line-height: 1.6;
 }
 .gallery-container {
@@ -474,11 +483,13 @@ progress[value]::-webkit-progress-value {
   color: white;
   font-size: 35px;
   margin-right: 60px;
+  /* width: 32%; */
 }
 .newsletter-section input[type="text"] {
   width: 400px;
-  height: 30px;
+  height: 46px;
   padding: 5px 20px;
+  margin-right: 30px;
 }
 .newsletter-section input[type="button"] {
   background-color: #cc3d23;
@@ -584,7 +595,8 @@ progress[value]::-webkit-progress-value {
 .about-us-link,
 .discover-link,
 .quick-link {
-  width: 250px;
+  width: 31%;
+  margin: 0px 10px;
 }
 .sub-heading-underline {
   background-color: #f54121;
@@ -699,16 +711,45 @@ progress[value]::-webkit-progress-value {
   right: 17px;
   margin-left: 80%;
 }
-
+.nav-menu {
+  display: none;
+}
 /* For mobile phones */
 
 @media only screen and (max-width: 600px) {
   /* [class*="nav-header"] { */
   .nav-header {
     width: 100%;
-    font-size: 54px;
     align-items: center;
     flex-direction: column;
+    padding: 0px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  .nav-button {
+    display: none;
+  }
+  .navbar button {
+    background-color: white;
+    color: gray;
+    border: 0px;
+    margin-left: 25px;
+    padding: 8px 16px;
+    font-size: 21px;
+  }
+  .nav-menu {
+    display: block;
   }
   .contact-list {
     border: none;
@@ -716,7 +757,169 @@ progress[value]::-webkit-progress-value {
   .social-media-list {
     border: none;
   }
-  .social-media-item{
-    padding: 50px;
+  .feature-container {
+      width: 100%;
+  }
+  .about-us-image {
+    order: -1;
+    margin: 0px;
+  }
+  .about-us-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .about-us-container img {
+    width: 100%;
+  }
+  .our-causes-container {
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+  .video-section {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .video-container {
+    width: 100%;
+    height: 100%;
+  }
+  .gallery-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .gallery-container .column img {
+    width: 100%;
+    height: 50%;
+  }
+  .our-volunteer-container {
+    flex-direction: column;
+    margin: 150px 10px;
+  }
+  .footer-section {
+    padding: 35px 20px 25px;
+    flex-direction: column;
+  }
+  .newsletter-section {
+    flex-direction: column;
+    padding: 35px;
+  }
+  .slider,
+  .slider-image {
+    height: 200px;
+  }
+  .slider fieldset {
+    border: none;
+    width: 100%;
+  }
+  .slider-caption h5,
+  .slider-content .bottom-fieldset {
+    display: none;
+  }
+  .message-us-container {
+    bottom: 0px;
+    flex-direction: column;
+    padding: 0px;
+    margin: 20px;
+  }
+  .company-feature {
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+  }
+  .donation-card:nth-last-child(2) {
+    margin: 20px 0px;
+  }
+  .donation-card,
+  .donation-card img {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+    height: 200px;
+    margin-right: 0px;
+  }
+  .video-info {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .video .play-btn {
+    bottom: 70%;
+  }
+  .form-container {
+    height: 100%;
+    width: 100%;
+  }
+  .contact-message {
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 100px;
+  }
+  .feature {
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+  }
+  .newsletter-section {
+    padding: 30px 0px;
+    text-align: center;
+  }
+  .newsletter-section h1 {
+    font-size: 25px;
+    margin-right: 0px;
+  }
+  .newsletter-section input[type="text"] {
+    width: 90%;
+    height: 42px;
+    margin: 20px 0px;
+  }
+  .about-us-link,
+  .discover-link,
+  .quick-link {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+  .footer-section ul {
+    margin-right: 0px;
+  }
+  .slider-content .top-legend {
+    font-size: initial;
+    padding: 0px;
+    border-bottom: 2px solid #f54121;
+  }
+  .volunteer-card-container {
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    height: 280px;
+    display: none;
+  }
+  .volunteer-card-container:first-child {
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    height: 280px;
+    display: block;
+  }
+  .section-heading p {
+    width: 93%;
+  }
+  .about-us-section,
+  .our-causes-section,
+  .video-section,
+  .our-gallery-section,
+  .our-volunteer-section {
+    padding: 60px 0px;
+  }
+  .video-section {
+    padding: 60px 20px;
+  }
+  .our-gallery-section {
+    padding: 60px 0px 0px 0px;
+  }
+  .about-us-content {
+    margin-top: 50px;
+  }
+  .about-us-item {
+    width: 100%;
   }
 }
