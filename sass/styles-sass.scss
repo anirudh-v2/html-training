@@ -1,24 +1,4 @@
-$primary-color: #f54121;
-$container-width: 1100px;
-$column-width: 335px;
-$section-padding: 90px 0px;
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-body,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0px;
-  padding: 0px;
-}
+
 header {
   display: flex;
   background-color: #333333;
@@ -152,20 +132,6 @@ nav {
   margin: 0px;
   height: 1px;
 }
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.column {
-  display: flex;
-  flex-direction: column;
-}
-%container {
-  width: 62%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 p {
   line-height: 1.6;
   color: grey;
@@ -174,7 +140,7 @@ p {
   .slider {
     background-image: url();
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(./images/slider.jpg);
+      url(../images/slider.jpg);
     height: 840px;
     display: flex;
     justify-content: center;
