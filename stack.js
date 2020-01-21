@@ -1,20 +1,22 @@
-var stack=[];
-function push(element){
+var stack = [];
+function push(element) {
     stack.push(element)
 }
 
-function pop(){
+function pop() {
     stack.pop()
+}
+function printStack() {
+    for (i in stack) {
+        console.log(stack[i]);
+    }
 }
 push(10)
 push(20)
 push(30)
 console.log("elements pushed")
-for(i in stack){
-    console.log(stack[i]);
-}
-console.log("stack after pop")
+printStack()
+
 pop()
-for(i in stack){
-    console.log(stack[i]);
-}
+console.log("stack after pop")
+printStack()
