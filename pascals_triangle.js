@@ -11,7 +11,12 @@ readline.question(`Enter the number of rows `, (rows) => {
             str = str + ' ';
         }
         for (let j = 1; j <= i; j++) {
-            str = str + c + ' ';
+            if (j >= 10) {
+                str = str + c + ' ';
+            }
+            else {
+                str = str + c + '  ';
+            }
             c = c * (i - j) / j;
         }
         console.log(str)

@@ -10,16 +10,30 @@ readline.question(`Enter the number of rows `, (rows) => {
 
         //left space
         for (let k = 1; k <= (rows - i); k++) {
-            str = str + ' ';
+            str = str + '   ';
         }
         //left triangle
         for (let j = i; j != (2 * i); j++) {
-            str = str + j;
+            if (j >= 10) {
+                str = str + j + ' ';
+
+            }
+            else {
+                str = str + j + '  ';
+
+            }
 
         }
         //right triangle
         for (let k = (2 * i) - 2; k >= i; k--) {
-            str = str + k
+            if (k >= 10) {
+                str = str + k + ' ';
+
+            }
+            else {
+                str = str + k + '  ';
+
+            }
         }
         console.log(str);
     }
