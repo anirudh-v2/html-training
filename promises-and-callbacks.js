@@ -27,14 +27,24 @@ var response = {}
 function getFile(file) {
     fakeAjax(file, function (text) {
         response[file] = text
-        if (Object.keys(response).length === 3) {
-            console.log(response['file1'])
-            console.log(response['file2'])
-            console.log(response['file3'])
-            console.log("complete")
+        console.log(response)
+        var filenames = ['file1', 'file2', 'file3']
+
+        for (i = 0; i < filenames.length; i++) {
+            if (filenames[i] in response) {
+                if (typeof response[filenames[i]] == 'string') {
+                    console.log(response[filenames[i]])
+                    response[filenames[i]] = false
+                }
+            }
+            else {
+                return;
+            }
         }
+        console.log("complete")
     })
 }
+
 
 
 getFile('file1');
